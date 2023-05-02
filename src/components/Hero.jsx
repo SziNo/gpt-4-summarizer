@@ -13,7 +13,9 @@ const Hero = () => {
 
         <button
           type='button'
-          onClick={() => window.open('https://github.com/SziNo')}
+          onClick={() =>
+            window.open('https://github.com/SziNo/gpt-4-summarizer/tree/master')
+          }
           className='black_btn'
         >
           GitHub
