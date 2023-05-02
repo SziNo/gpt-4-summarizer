@@ -14,7 +14,7 @@ const Hero = () => {
         <button
           type='button'
           onClick={() =>
-            window.open('https://github.com/SziNo/gpt-4-summarizer/tree/master')
+            window.open('https://github.com/SziNo/gpt-4-summarizer')
           }
           className='black_btn'
         >
@@ -27,8 +27,8 @@ const Hero = () => {
         <span className='orange_gradient'>OpenAI GPT-4</span>
       </h1>
       <h2 className='desc'>
-        Simplify your reading with Summize, an open-source article summarizer
-        that transforms lengthy articles into clear and concise summaries
+        Simplify your reading with Sumz, an open-source article summarizer that
+        transforms lengthy articles into clear and concise summaries
         <br />
         <br />
         Fetching a new summary might take up to 5-10 seconds, afterwards all you
