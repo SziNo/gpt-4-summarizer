@@ -41,7 +41,7 @@ const Demo = () => {
       // update states
       setArticle(newArticle)
       setAllArticles(updatedAllArticles)
-      // caching by retrieving data from localStorage
+      // save data in localStorage
       localStorage.setItem('articles', JSON.stringify(updatedAllArticles))
     }
   }
