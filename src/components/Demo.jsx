@@ -25,9 +25,7 @@ const Demo = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
 
-    const existingArticle = allArticles.find((el) =>
-      el.url.includes(article.url)
-    )
+    const existingArticle = allArticles.find((el) => el.url === article.url)
 
     if (existingArticle) {
       setArticle(existingArticle)
