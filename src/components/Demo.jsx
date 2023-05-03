@@ -25,6 +25,15 @@ const Demo = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
 
+    const existingArticle = allArticles.find((el) =>
+      el.url.includes(article.url)
+    )
+
+    if (existingArticle) {
+      setArticle(existingArticle)
+      return
+    }
+
     const { data } = await getSummary({ articleUrl: article.url })
 
     if (data?.summary) {
